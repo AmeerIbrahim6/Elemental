@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ELEMENTAL — Contemporary Luxury Fashion House. Style is not about being noticed. It's about being remembered." />
+  <title>ELEMENTAL — Beyond The Ordinary | Luxury Fashion House</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/elemental-monogram.svg" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- Top Luxury Announcement Bar -->
+  <div class="announcement-bar">
+    Complimentary White-Glove Delivery Across Pakistan on Orders Above PKR 35,000 &bull; Autumn / Winter Atelier Collection
+  </div>
+
+  <!-- Glassmorphism Navigation Bar -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="ELEMENTAL Home">ELEMENTAL</a>
+
+      <nav id="main-nav" class="main-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="men.html" class="nav-link">Men</a>
+        <a href="women.html" class="nav-link">Women</a>
+        <a href="#featured-collection" class="nav-link">Collections</a>
+        <a href="accessories.html" class="nav-link">Accessories</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" data-open-search aria-label="Search Products" title="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button type="button" class="icon-btn" data-open-account aria-label="User Account" title="Client Portal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+
+        <button type="button" class="icon-btn" data-open-wishlist aria-label="Wishlist" title="Private Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count" data-wishlist-count style="display:none;">0</span>
+        </button>
+
+        <button type="button" class="icon-btn" data-open-cart aria-label="Shopping Bag" title="Shopping Bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge-count" data-cart-count>0</span>
+        </button>
+
+        <button type="button" id="mobile-menu-toggle" class="icon-btn mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <line x1="3" y1="7" x2="21" y2="7"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="17" x2="21" y2="17"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================================================================
+         A. HERO SECTION WITH INTERACTIVE 3D & EDITORIAL PHOTOGRAPHY
+         =================================================================== -->
+    <section class="hero-section" aria-label="Hero Banner">
+      <!-- Interactive Three.js 3D Sculptural Canvas -->
+      <canvas id="hero-3d-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-philosophy-pill glass-panel">
+            <span class="dot"></span>
+            <span>"Style is not about being noticed. It's about being remembered."</span>
+          </div>
+
+          <h1 class="hero-title">BEYOND THE <em>ORDINARY.</em></h1>
+
+          <p class="hero-description">
+            Discover timeless essentials designed for those who define their own style. Architectural tailoring, noble natural fibers, and enduring silhouettes crafted without compromise.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#featured-collection" class="btn btn-primary">EXPLORE COLLECTION</a>
+            <a href="about.html" class="btn btn-secondary">DISCOVER OUR STORY</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <strong>100%</strong>
+              <span>Noble Natural Fibers</span>
+            </div>
+            <div class="metric-item">
+              <strong>360°</strong>
+              <span>Interactive 3D Atelier</span>
+            </div>
+            <div class="metric-item">
+              <strong>Edition</strong>
+              <span>Numbered Seasonal Runs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrapper">
+          <div class="hero-editorial-frame">
+            <div class="hero-3d-badge glass-panel float-slow">
+              <span class="pulse-dot"></span>
+              <span>Interactive 3D Space</span>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=85"
+              alt="ELEMENTAL Luxury Cashmere Trench Editorial"
+              onerror="this.onerror=null;this.src=getEditorialFallbackImage('ELEMENTAL ATELIER');"
+            />
+          </div>
+
+          <div class="hero-floating-card glass-panel float-slow">
+            <span class="card-tag">Signature Look 01</span>
+            <h4 class="serif-heading">Sculpted Cashmere Trench</h4>
+            <p>Double-faced Italian virgin wool &amp; cashmere. PKR 76,000</p>
+            <a href="product.html?id=elm-w-01" class="link-underline" style="margin-top:0.65rem; font-size:0.68rem;">
+              Inspect Piece &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         B. SHOP BY CATEGORY
+         =================================================================== -->
+    <section class="section-padding" id="shop-categories">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div>
+            <span class="eyebrow">Curated Wardrobes</span>
+            <h2 class="section-title">Shop By Category</h2>
+          </div>
+          <p class="section-subtitle">
+            Explore our four foundational pillars of contemporary dressing, balancing architectural structure with effortless comfort.
+          </p>
+        </div>
+
+        <div class="category-grid">
+          <!-- MEN -->
+          <article class="category-card reveal-up">
+            <img
+              src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=85"
+              alt="Men's Luxury Tailoring and Outerwear"
+              loading="lazy"
+            />
+            <div class="category-card-content">
+              <h3 class="category-card-title">MEN</h3>
+              <p class="category-card-desc">Structured wool overcoats, unstructured linen blazers, and fine-gauge merino knitwear.</p>
+              <a href="men.html" class="category-explore-btn">Explore &rarr;</a>
+            </div>
+          </article>
+
+          <!-- WOMEN -->
+          <article class="category-card reveal-up">
+            <img
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85"
+              alt="Women's Luxury Silk Dresses and Tailoring"
+              loading="lazy"
+            />
+            <div class="category-card-content">
+              <h3 class="category-card-title">WOMEN</h3>
+              <p class="category-card-desc">Fluid mulberry silk bias dresses, belted cashmere coats, and sculptural atelier suiting.</p>
+              <a href="women.html" class="category-explore-btn">Explore &rarr;</a>
+            </div>
+          </article>
+
+          <!-- ACCESSORIES -->
+          <article class="category-card reveal-up">
+            <img
+              src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=85"
+              alt="Luxury Leather Bags, Timepieces and Footwear"
+              loading="lazy"
+            />
+            <div class="category-card-content">
+              <h3 class="category-card-title">ACCESSORIES</h3>
+              <p class="category-card-desc">Tuscan box-calf totes, minimalist Swiss-movement timepieces, and Goodyear-welted boots.</p>
+              <a href="accessories.html" class="category-explore-btn">Explore &rarr;</a>
+            </div>
+          </article>
+
+          <!-- NEW ARRIVALS -->
+          <article class="category-card reveal-up">
+            <img
+              src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=85"
+              alt="New Season Editorial Arrivals"
+              loading="lazy"
+            />
+            <div class="category-card-content">
+              <h3 class="category-card-title">NEW ARRIVALS</h3>
+              <p class="category-card-desc">First-edition seasonal silhouettes in Deep Charcoal, Warm Ivory, and Champagne Beige.</p>
+              <a href="#new-arrivals" class="category-explore-btn">Explore &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         C. FEATURED COLLECTION
+         =================================================================== -->
+    <section class="section-padding" id="featured-collection" style="background-color: var(--color-ivory-light);">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div>
+            <span class="eyebrow">Signature Edit</span>
+            <h2 class="section-title">Featured Collection</h2>
+          </div>
+          <div>
+            <p class="section-subtitle" style="margin-bottom:0.85rem;">
+              Each garment is conceived as a permanent wardrobe cornerstone. Select your preferred color finish and size directly or open Quick View.
+            </p>
+            <a href="men.html" class="link-underline">View Complete Archive &rarr;</a>
+          </div>
+        </div>
+
+        <!-- 4-Column Product Grid rendered by products.js & main.js -->
+        <div id="featured-product-grid" class="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         D. NEW ARRIVALS WITH CATEGORY FILTERS & SORTING
+         =================================================================== -->
+    <section class="section-padding" id="new-arrivals">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div>
+            <span class="eyebrow">Latest Release</span>
+            <h2 class="section-title">New Arrivals</h2>
+          </div>
+          <p class="section-subtitle">
+            Newly arrived seasonal garments and artisanal objects. Filter by department or sort by price to curate your selection.
+          </p>
+        </div>
+
+        <div class="filter-bar reveal-up">
+          <div class="filter-tabs" role="tablist" aria-label="Filter New Arrivals by Category">
+            <button type="button" class="filter-tab active" data-arrival-filter="all">All Releases</button>
+            <button type="button" class="filter-tab" data-arrival-filter="men">Men</button>
+            <button type="button" class="filter-tab" data-arrival-filter="women">Women</button>
+            <button type="button" class="filter-tab" data-arrival-filter="accessories">Accessories</button>
+          </div>
+
+          <div class="sort-controls">
+            <label for="arrival-sort-select" style="font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--color-taupe);">Sort By:</label>
+            <select id="arrival-sort-select" class="sort-select" aria-label="Sort products">
+              <option value="featured">Editorial Curated</option>
+              <option value="newest">Newest First</option>
+              <option value="price-asc">Price: Low to High (PKR)</option>
+              <option value="price-desc">Price: High to Low (PKR)</option>
+              <option value="name-asc">Alphabetical (A–Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="new-arrivals-grid" class="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         F. ABOUT ELEMENTAL (BRAND STORY SECTION)
+         =================================================================== -->
+    <section class="section-padding" id="about-elemental" style="background-color: #EDE8DD;">
+      <div class="container">
+        <div class="about-editorial-grid">
+          <div class="about-image-collage reveal-up">
+            <div class="collage-main">
+              <img
+                src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=900&q=85"
+                alt="ELEMENTAL Editorial Craftsmanship"
+                loading="lazy"
+              />
+            </div>
+            <div class="collage-secondary">
+              <img
+                src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=800&q=85"
+                alt="ELEMENTAL Tailored Menswear"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="about-story-content reveal-up">
+            <span class="eyebrow">The Philosophy of Quiet Luxury</span>
+            <h2 class="section-title">DEFINED BY SIMPLICITY. CREATED FOR INDIVIDUALITY.</h2>
+            <p style="font-size: 0.98rem; color: var(--color-charcoal-soft); margin-bottom: 1.2rem; line-height: 1.8;">
+              ELEMENTAL is a contemporary luxury fashion house devoted to timeless design, refined details, uncompromising material quality, and quiet individuality. Born from an appreciation for architectural proportion, our collections transcend fleeting seasonal noise.
+            </p>
+            <p style="font-size: 0.95rem; color: var(--color-taupe); line-height: 1.8;">
+              Every coat, bias-cut silk dress, and vegetable-tanned leather piece is developed in partnership with heritage mills across Biella, Como, and Okayama—ensuring that what touches your skin ages with grace over decades.
+            </p>
+
+            <blockquote class="about-quote-box">
+              "Style is not about being noticed. It's about being remembered."
+            </blockquote>
+
+            <a href="about.html" class="btn btn-primary">Read Our Full Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         G. WHY CHOOSE ELEMENTAL (4 PILLAR CARDS)
+         =================================================================== -->
+    <section class="section-padding" id="why-choose-elemental">
+      <div class="container">
+        <div class="section-header center reveal-up">
+          <span class="eyebrow">The Elemental Standard</span>
+          <h2 class="section-title">Why Choose ELEMENTAL</h2>
+          <p class="section-subtitle">
+            Four foundational commitments that distinguish every garment bearing the ELEMENTAL woven label.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- 1. Premium Quality -->
+          <article class="pillar-card glass-panel reveal-up">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="serif-heading">Premium Quality</h3>
+            <p>Woven from certified Grade-A Mongolian cashmere, extra-fine Australian merino wool, 30-momme mulberry silk, and full-grain Tuscan calfskin.</p>
+          </article>
+
+          <!-- 2. Timeless Design -->
+          <article class="pillar-card glass-panel reveal-up">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="serif-heading">Timeless Design</h3>
+            <p>Restrained monochromatic palettes and architectural proportions conceived to remain relevant and effortless year after year.</p>
+          </article>
+
+          <!-- 3. Exceptional Comfort -->
+          <article class="pillar-card glass-panel reveal-up">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                <line x1="16" y1="8" x2="2" y2="22"></line>
+                <line x1="17.5" y1="15" x2="9" y2="15"></line>
+              </svg>
+            </div>
+            <h3 class="serif-heading">Exceptional Comfort</h3>
+            <p>Breathable Bemberg cupro linings, unpadded natural shoulders, and ergonomic bias cuts that move fluidly with the wearer.</p>
+          </article>
+
+          <!-- 4. Refined Craftsmanship -->
+          <article class="pillar-card glass-panel reveal-up">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="serif-heading">Refined Craftsmanship</h3>
+            <p>Hand-finished lapel pick-stitching, genuine horn and mother-of-pearl buttons, and reinforced seams inspected through 14 quality stages.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         H. NEWSLETTER SUBSCRIPTION
+         =================================================================== -->
+    <section class="newsletter-section" id="newsletter">
+      <div class="container">
+        <div class="newsletter-box glass-panel reveal-up">
+          <span class="eyebrow">Private Invitations &amp; Seasonal Journals</span>
+          <h2 class="section-title">BE PART OF THE ELEMENTAL WORLD.</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            Discover new collections, exclusive releases, and a more refined approach to everyday style.
+          </p>
+
+          <form class="newsletter-form js-newsletter-form" novalidate>
+            <label for="home-newsletter-email" class="sr-only">Email Address</label>
+            <input
+              type="email"
+              id="home-newsletter-email"
+              class="newsletter-input"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+          </form>
+          <div class="form-feedback" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       I. DETAILED LUXURY E-COMMERCE FOOTER
+       =================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand & Philosophy Column -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo">ELEMENTAL</a>
+          <p class="footer-philosophy">
+            "Style is not about being noticed. It's about being remembered."
+          </p>
+          <p style="font-size: 0.82rem; color: var(--color-stone); line-height: 1.65;">
+            Contemporary luxury fashion house offering architectural menswear, womenswear, and artisanal leather goods priced in PKR.
+          </p>
+          <div class="social-links" aria-label="Social Media Links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 20l4-9"></path>
+                <path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75-1.554 3.75-4a5 5 0 1 0-9.7 1.7"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 1: SHOP -->
+        <div class="footer-col">
+          <h4>SHOP</h4>
+          <ul class="footer-links">
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="#new-arrivals">New Arrivals</a></li>
+            <li><a href="#featured-collection">Best Sellers</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: CUSTOMER SERVICE -->
+        <div class="footer-col">
+          <h4>CUSTOMER SERVICE</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#faq-section">FAQs</a></li>
+            <li><a href="contact.html#shipping-policy">Shipping Information</a></li>
+            <li><a href="contact.html#returns-policy">Returns and Exchanges</a></li>
+            <li><a href="contact.html#order-tracking">Order Tracking</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: ABOUT -->
+        <div class="footer-col">
+          <h4>ABOUT</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html#brand-philosophy">Our Philosophy</a></li>
+            <li><a href="about.html#atelier-careers">Careers</a></li>
+            <li><a href="about.html#privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: LEGAL -->
+        <div class="footer-col">
+          <h4>LEGAL</h4>
+          <ul class="footer-links">
+            <li><a href="about.html#terms-conditions">Terms and Conditions</a></li>
+            <li><a href="about.html#privacy-policy">Privacy Policy</a></li>
+            <li><a href="about.html#cookie-policy">Cookie Policy</a></li>
+            <li><a href="about.html#refund-policy">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: CONTACT INFORMATION -->
+        <div class="footer-col">
+          <h4>CONTACT INFORMATION</h4>
+          <div class="footer-contact-list">
+            <div>
+              <strong style="color:var(--color-champagne); display:block; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em;">Client Concierge Phone</strong>
+              <a href="tel:03020009893">03020009893</a>
+            </div>
+            <div>
+              <strong style="color:var(--color-champagne); display:block; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em;">Direct Atelier Email</strong>
+              <a href="mailto:ameeribrahimqamar6@gmail.com">ameeribrahimqamar6@gmail.com</a>
+            </div>
+            <div>
+              <form class="footer-mini-newsletter js-newsletter-form" novalidate>
+                <input type="email" placeholder="Newsletter email..." aria-label="Footer Newsletter Email" required />
+                <button type="submit">Join &rarr;</button>
+              </form>
+              <div class="form-feedback" style="font-size:0.72rem;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 ELEMENTAL Luxury Fashion House. All Rights Reserved. Interactive Frontend E-Commerce Experience.
+        </div>
+        <div class="payment-methods" aria-label="Accepted Payment Methods">
+          <span class="payment-pill">VISA</span>
+          <span class="payment-pill">Mastercard</span>
+          <span class="payment-pill">American Express</span>
+          <span class="payment-pill">Apple Pay</span>
+          <span class="payment-pill">Bank Transfer (PKR)</span>
+          <span class="payment-pill">Cash on Delivery</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External Libraries: Three.js & GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- ELEMENTAL Application Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/3d-scene.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

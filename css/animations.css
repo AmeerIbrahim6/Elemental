@@ -1,0 +1,101 @@
+/* ==========================================================================
+   ELEMENTAL — PREMIUM LUXURY FASHION E-COMMERCE
+   File: css/animations.css
+   Refined editorial transitions, GSAP helper classes, and reduced-motion rules
+   ========================================================================== */
+
+/* Reveal states for scroll animations (graceful fallback if JS/GSAP disabled) */
+.reveal-up {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.js-anim-ready .reveal-up {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+.js-anim-ready .reveal-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Subtle floating keyframes for badges and 3D indicators */
+@keyframes floatSubtle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+.float-slow {
+  animation: floatSubtle 5.5s ease-in-out infinite;
+}
+
+@keyframes pulseRing {
+  0% {
+    box-shadow: 0 0 0 0 rgba(216, 201, 181, 0.65);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(216, 201, 181, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(216, 201, 181, 0);
+  }
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-champagne);
+  display: inline-block;
+  animation: pulseRing 2.4s infinite;
+}
+
+/* Cart badge pop animation */
+@keyframes badgePop {
+  0% { transform: scale(1); }
+  45% { transform: scale(1.38); }
+  100% { transform: scale(1); }
+}
+
+.badge-count.pop {
+  animation: badgePop 0.36s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Image shimmer placeholder while loading */
+@keyframes editorialShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.img-loading {
+  background: linear-gradient(90deg, #E8E1D5 25%, #F2EDE4 50%, #E8E1D5 75%);
+  background-size: 200% 100%;
+  animation: editorialShimmer 2s infinite linear;
+}
+
+/* Respect Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .js-anim-ready .reveal-up {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+

@@ -1,0 +1,28 @@
+{
+  "brand": "ELEMENTAL",
+  "version": "1.0.0",
+  "models": [
+    {
+      "id": "overcoat",
+      "productId": "elm-m-01",
+      "name": "Architectural Double-Breasted Overcoat Form",
+      "materials": ["Virgin Wool", "Cashmere", "Horn Buttons"],
+      "swatches": ["#D8C9B5", "#171717", "#8B8177", "#F5F2EB"]
+    },
+    {
+      "id": "tote",
+      "productId": "elm-a-01",
+      "name": "Artisanal Box-Calf Architectural Tote",
+      "materials": ["Vegetable-Tanned Calfskin", "Brushed Palladium"],
+      "swatches": ["#D8C9B5", "#171717", "#8B8177", "#F5F2EB"]
+    },
+    {
+      "id": "watch",
+      "productId": "elm-a-02",
+      "name": "Chronographe Minimaliste 40mm Watch",
+      "materials": ["316L Stainless Steel", "Sapphire Crystal", "Alligator-Embossed Calfskin"],
+      "swatches": ["#D8C9B5", "#171717", "#8B8177", "#F5F2EB"]
+    }
+  ]
+}
+
